@@ -4,4 +4,11 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      - name: "挨拶"
+        run: echo "Nice to meet you!!"
+
+      - name: "名前を言う"
+        run: echo "My Name is Yumiko!!"
+
+      - name: "趣味を話す"
+        run: echo "I love reading books!!"
