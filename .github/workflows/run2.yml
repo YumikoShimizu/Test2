@@ -4,9 +4,9 @@ on: [push]
 jobs:
   my_job:
     runs-on: ubuntu-latest
-    if: github.actor == 'YumikoShimizu'
-    steps:
+    if: github.actor == 'Yumiko'
+      steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run a one-line script
+      - name: Run Hello, World!
         run: echo Hello, world!
