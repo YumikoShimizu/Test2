@@ -5,7 +5,7 @@ jobs:
   my_job:
     runs-on: ubuntu-latest
     if: github.actor == 'Yumiko'
-      steps:
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run Hello, World!
