@@ -1,0 +1,12 @@
+name: run2
+on: [push]
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    if: github.actor == 'YumikoShimizu'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world!
